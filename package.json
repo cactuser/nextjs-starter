@@ -14,8 +14,9 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn lint:all",
-      "git add"
+      "yarn format",
+      "yarn lint",
+      "bash -c 'yarn tsc'"
     ]
   },
   "dependencies": {
